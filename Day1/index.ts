@@ -81,7 +81,6 @@ const part2 = (input: Array<string>) => {
 			default:
 				buffer.push(parseInt(`${test[0]}${test[test.length - 1]}`));
 		}
-		console.log(buffer);
 	});
 	// }
 	console.log(
