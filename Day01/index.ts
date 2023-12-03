@@ -1,8 +1,8 @@
 import { textSpanOverlap } from 'typescript';
 import { readFile } from '../read';
-const input: Array<string> = readFile('Day1/input.txt');
-const example: Array<string> = readFile('Day1/example.txt');
-const example2: Array<string> = readFile('Day1/example2.txt');
+const input: Array<string> = readFile('Day01/input.txt');
+const example: Array<string> = readFile('Day01/example.txt');
+const example2: Array<string> = readFile('Day01/example2.txt');
 let buffer: Array<number> = [];
 
 const numberMapping: { [key: string]: string } = {
@@ -60,12 +60,13 @@ const part1 = (input: Array<string>) => {
 		}
 	});
 	console.log(
-		'part 1: ',
+		'Part 1: ',
 		buffer.reduce((a, b) => a + b),
 	);
 };
-
+console.time('Part 1');
 part1(input);
+console.timeEnd('Part 1');
 
 const part2 = (input: Array<string>) => {
 	buffer = [];
@@ -84,9 +85,11 @@ const part2 = (input: Array<string>) => {
 	});
 	// }
 	console.log(
-		'part 2: ',
+		'Part 2: ',
 		buffer.reduce((a, b) => a + b),
 	);
 };
 
+console.time('Part 2');
 part2(input);
+console.timeEnd('Part 2');

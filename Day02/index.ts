@@ -1,7 +1,7 @@
 import { readFile } from '../read';
 
-const example: Array<string> = readFile('Day2/example.txt');
-const input: Array<string> = readFile('Day2/input.txt');
+const example: Array<string> = readFile('Day02/example.txt');
+const input: Array<string> = readFile('Day02/input.txt');
 
 let startTime: number = 0;
 let endTime: number = 0;
@@ -57,9 +57,9 @@ const part1 = (input: Array<string>) => {
 	);
 };
 
-console.time('part1');
+console.time('Part 1');
 part1(input);
-console.timeEnd('part1');
+console.timeEnd('Part 1');
 
 let diceAmount: { [key: string]: number } = {
 	red: 1,
@@ -94,6 +94,6 @@ const part2 = (input: Array<string>) => {
 	);
 };
 
-console.time('part2');
+console.time('Part 2');
 part2(input);
-console.timeEnd('part2');
+console.timeEnd('Part 2');
