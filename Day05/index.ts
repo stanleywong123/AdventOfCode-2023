@@ -1,4 +1,3 @@
-import { parse } from 'path';
 import { readFile, readFilePure } from '../read';
 
 const example = readFilePure('./Day05/example.txt');
